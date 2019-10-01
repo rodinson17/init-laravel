@@ -25,6 +25,6 @@ Route::get('/home', 'HomeController@index')->name('home'); */
 
 Route::get('/categoria', 'CategoriaController@index');
 Route::post('/categoria/registrar', 'CategoriaController@store')->name('registrar-categoria');
-Route::post('/categoria/actualizar', 'CategoriaController@update')->name('actualizar-categoria');
-Route::post('/categoria/desactivar', 'CategoriaController@desactivar')->name('desactivar-categoria');
-Route::post('/categoria/activar', 'CategoriaController@activar')->name('activer-categoria');
+Route::put('/categoria/actualizar', 'CategoriaController@update')->name('actualizar-categoria');
+Route::put('/categoria/desactivar', 'CategoriaController@desactivar')->name('desactivar-categoria');
+Route::put('/categoria/activar', 'CategoriaController@activar')->name('activer-categoria');
